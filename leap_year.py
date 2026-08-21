@@ -1,9 +1,6 @@
-year = 2000 
-
-if year % 4 == 0 and year % 100 != 0:
-    print("The year is a Leap year")
-elif year % 400 == 0:
-    print("The year is a Leap year")
+year = int(input("Введите год для проверки: "))
+if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+    print (f"{year} is the leap year")
 else:
-    print("The year is not a Leap year")
-    
+    print (f"{year} is not a leap year")
+
